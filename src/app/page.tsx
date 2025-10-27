@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -10,12 +10,14 @@ import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import { Bed, Building, MessageCircle, Star } from 'lucide-react';
 
+const assetMap = [];
+
 export default function Home() {
   return (
     <ThemeProvider
       defaultButtonVariant="icon-arrow"
       defaultTextAnimation="entrance-slide"
-      borderRadius="pill"
+      borderRadius="sharp"
     >
       <div id="nav" data-section="nav">
         <NavbarStyleMinimal
